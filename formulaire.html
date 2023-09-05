@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 5px;
+        }
+        input[type=button]{
+            margin: 10px;
+        }
+       fieldset{
+    background-color: antiquewhite;
+        }
+        legend{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+        }
+        input[type="checkbox"], input[type="radio"]{
+    width: auto;
+        }
+        input,button{
+    width: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Me contacter</h1>
+    <form action="post" autocomplete="on">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div>
+                <label for="nom">Nom :</label>
+                <input id="nom" type="text" placeholder="votre nom" name="nom" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="votre mail">
+            </div>
+            <div>
+                <label for="tel">Téléphone :</label>
+                <input id="tel" type="tel" name="tel">
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="genre">Genre :</label>
+                <input id="homme" type="radio" name="genre" value="Homme">
+                <label for="homme">Homme</label>
+                <input id="femme" type="radio" name="genre" value="Femme">
+                <label for="femme">Femme</label>
+                <input id="autre" type="radio" name="genre" value="Autre">
+                <label for="autre">Autre</label>
+            </div>
+            <div>
+                <label for="interet">Intérêts:</label>
+                <input type="checkbox" id="DevWeb" name="interet" value="DevWeb">
+                <label for="DevWeb">Développement Web</label>
+                <input type="checkbox" id="DevMob" name="interet" value="devMobile"> 
+                <label for="DevMob">Développement Mobile</label>
+            </div>
+            <div>
+                <label for="pays">Pays:</label>
+                <select id="pays" name="pays" value="pays">
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="allemangne">Allemagne</option>
+                        <option value="belgique">Belgique</option>
+                    </optgroup>
+                    <optgroup label="Afrique">
+                        <option value="Maroc">Maroc</option>
+                        <option value="Algérie">Algérie</option>
+                        <option value="Tunisie">Tunisie</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </fieldset>
+        <hr>
+        
+    </form>
+    <a href="./blog.html">
+        <button>retour</button>
+    </a>
+    
+</body>
+</html>

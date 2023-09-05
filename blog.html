@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.cs">
+    <style>
+        body{
+            margin: 10px;
+        }
+        header{
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(to right, rgb(0, 0,255,0.9),rgb(0, 0,255,0.5),rgb(0, 0, 255,0.2));
+        }
+        h1{
+            color: rgb(52, 4, 4);
+            text-shadow: 0px 0px 10px rgb(52, 4, 4);
+        }
+        h2{
+            color:red;
+            text-decoration: underline;
+        }
+
+        article{
+            margin: 2px;
+            background: linear-gradient(to right, rgb(255, 255, 255),rgb(182, 172, 250), rgb(112, 63, 246));
+        }
+        
+
+        .italique{
+            font-style: italic;
+        }
+        .souligne{
+            text-decoration: underline;
+        }
+        .gras{
+            font-weight: bold;
+        }
+        button a{
+            text-decoration: none;
+        }
+        button a:visited, button a:link{
+            color: black;
+        }
+        button:hover{
+            border-bottom: 5px solid red;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            background-color: rgb(249, 126, 2);
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+        button:active{
+            background-color: rgb(255, 0, 0);
+            transform: translateY(3px);
+        }
+        .couleur{
+            background: linear-gradient(to bottom,rgb(184, 167, 233),rgb(197, 189, 249),rgb(255, 255, 255));
+        }
+        nav a{
+            color: white;
+            font-size: 18px;
+        }
+        .etoile{
+            animation: etoile 20s linear infinite reverse;
+        }
+        @keyframes etoile{
+            from {
+                transform: rotate(0) translateX(0);
+            }
+            to {
+                transform: rotate(360deg) translateX(10px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="haut-de-page">Mon premier blog</h1>
+        <nav>
+            <a href="#">Blog</a>
+            <a href="./horraire blog.html">Twitch</a>
+            <a href="./formulaire/formulaire.html">Contact</a>
+            <a href="#">à propos</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Refonte prochaine du site</h2>
+                <div>
+                    <p>
+                        <span class="italique">Publié le 02 septembre 2023, 16h22</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span class="gras">Hey les amis !</span>
+                        Gros changement sur le blog ! Préparez vous prochainement pour une refonte graphique époustouflante qui apportera une nouvelle fraicheur à nos discussions
+                        tech. Restez connectés pour une xp encore plus immersive.
+                        <img src="assets/image/ordinateur.webp" alt="photo ordinateur" width="25">
+                        <img src="assets/image/etoile2.png" alt="photo étoile" width="25"><br>
+                        <aside>
+                            <span class="italique">#nouveaulookenapproche</span>
+                        </aside>
+                    </p>
+                </div>    
+            </article>
+
+            <article>
+                <h2>Ajout d'un formulaire de contact</h2>
+                <div>
+                    
+                </div>
+            </article>
+                
+            
+            <article class="twitch">
+                <h2>Ouverture de ma chaîne twitch
+                    <img src="assets/image/twitch-logo-png.png" alt="logo twitch" height="20">
+                </h2>
+                <div>
+                    <p class="italique">publié le 01 septembre 2023, 13h37.</p>
+                </div>
+                <div>
+                    <p>
+                        <span class="gras">Salut à tous !</span>
+                        Je suis super excitée de vous annoncer une grande nouvelle. Après des semaines de préparation, j'ai finalement ouvert ma propre chaîne Twitch dédiée à l'univers informatique.
+                        <img src="assets/image/manette.webp" alt="image d'une manette de jeu" width="40">
+                        <img src="assets/image/ordinateur.webp" alt="image d'un ordinateur" width="40">
+                    </p>
+                    <p>Sur ma chaîne, nous allons plonger dans le monde fascinant de la programmation, des dernières technologies et des discussions en direct sur les sujets brûlants de l'industrie. Imaginez des sessions de codage interactives, des astuces pour optimiser votre workflow de développement, et bien sûr, des moments de détente où nous pourrons discuter librement de nos passions communes.</p>
+                    <p>Rejoignez-moi en direct pour des streams hebdomadaires, des sessions Q&R, et des événements spéciaux où nous pourrons échanger des idées et construire une communauté solide de nerds modernes. C'est le moment idéal pour partager nos connaissances, apprendre ensemble et se lancer dans des aventures numériques épiques.</p>
+                    <p>N'oubliez pas de vous abonner à ma chaîne pour être informé(e) des prochains streams et pour ne rien manquer de cette nouvelle aventure palpitante. 
+                        <a href="#horaires">Vous trouverez mes horaires de diffusion plus bas dans la page.</a> 
+                        Merci à tous pour votre soutien continu, et j'ai hâte de vous retrouver sur Twitch pour des heures incroyables de code, de rires et de découvertes. Restez connectés !
+                        <img src="assets/image/fusée.webp" alt="image d'une fusée" width="40">
+                        <img src="assets/image/code-html.webp" alt="image de code html" width="40">
+                    </p>
+                </div>
+            </article>
+               
+            
+            <hr>
+            <article class="html">
+                <h2>Ma découverte du html</h2>
+                <div>
+                    <p class="italique">publié le 28 aout, 17h45.</p>
+                </div>
+                <div>
+                    <p>
+                        <span class="gras">Salut les amis !</span>
+                        Aujourd'hui, je suis super excitée de partager avec vous ma découverte récente : le HTML. Oui, je sais, ça fait un moment que ça existe, mais je me suis enfin lancée dedans ! C'est comme si j'avais trouvé un trésor caché dans le monde numérique.
+                        Alors, le HTML, 
+                        <span class=souligne>c'est un peu comme la structure de base de tout site web.</span>
+                    </p>
+
+                    <p>Vous savez, c'est le langage qui donne vie à toutes ces pages magnifiques que nous aimons parcourir. Les balises sont un peu comme les ingrédients d'une recette : elles indiquent où doit aller le titre, l'image, le texte, et tout ce qui rend un site captivant.
+                        Mais pour maîtriser ce langage, trois qualités sont essentielles:
+                    <ol>
+                        <li>de la patience</li>
+                        <li>une bonne mémoire</li>
+                        <li>maitriser sa consommation de cafeine</li>
+                    </ol>
+                    Alors, pour tous mes followers qui souhaitent donner une touche personnelle à leur site, le HTML est une compétence incontournable. Croyez-moi, je suis conquise, et je suis sûre que vous le serez aussi.</p>
+                    
+                    <p class="italique">Allez, on se lance dans cette aventure numérique ensemble !
+                        <img src="assets/image/OIP.jpg" alt="photo d'un ordinateur" width="50"> 
+                        <img class="etoile" src="assets/image/etoile2.png" alt="photo etoile" width="45">
+                    </p>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section class="couleur">
+            <h2>Ma chaîne Twitch</h2>
+            <img src="assets/image/twitch-logo-svg.svg" alt="logo twitch" width="300"><br>
+            <button type="button" id="horaires">
+                <a href="./horraire blog.html">Mes horaires</a>
+            </button>
+            <button type="button" disabled>
+                <a href="#">en travaux...</a>
+            </button>
+        </section>
+        <hr>
+    </main>
+    <footer class="couleur">
+        <h2>liens utiles</h2>
+        <ul>
+            <li><a href="https://www.google.com/" target="_blank">Google, pour rechercher efficacement sur internet</a></li>
+            <li><a href="https://www.w3.org/" target="_blank">W3C, une organisation internationale qui dev des normes et des reco sur le web</a></li>
+            <li><a href="https://developer.mozilla.org/fr/" target="_blank">Le Mozilla Developer Network, mine d'or des dev</a></li>
+        </ul>  
+
+        <a href="#haut-de-page">haut de page</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horaires</title>
+    <link rel="stylesheet" href="blog.html">
+    <style>
+        td,th{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .gras{
+            font-weight: bold;
+        }
+        button a{
+            text-decoration: none;
+        }
+        button a:visited, button a:link{
+            color: black;
+        }
+        button:hover{
+            border-bottom: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mes horaires de diffusion</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="8">Horaires Septembre 2023</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="gras">
+                <td></td>
+                <td>lundi</td>
+                <td>mardi</td>
+                <td>mercredi</td>
+                <td>jeudi</td>
+                <td>vendredi</td>
+                <td>samedi</td>
+                <td>dimanche</td>
+            </tr>
+            <tr>
+                <td class="gras">semaine 1-2</td>
+                <td colspan="2">14h-18h</td>
+                <td>18h-21h</td>
+                <td rowspan="2" colspan="2">14h-18h</td>
+                <td rowspan="2" colspan="2">repos</td>
+            </tr>
+            <tr>
+                <td class="gras">semaine 3-4</td>
+                <td colspan="2">14h-16h</td>
+                <td>16h-22h</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <br>
+
+    <button type="button">
+        <a href="./blog.html">retour</a>
+    </button>
+    
+</body>
+</html>
